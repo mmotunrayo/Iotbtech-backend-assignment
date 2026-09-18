@@ -1,0 +1,31 @@
+﻿{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "IoTBTech Backend Assignment mini-project",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "ts-node src/index.ts",
+    "generate": "ts-node scripts/generate.ts",
+    "aggregate": "ts-node scripts/aggregate.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "mmotunrayo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^9.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  }
+}
