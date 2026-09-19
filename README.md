@@ -4,20 +4,20 @@ A Node.js / Express / TypeScript backend assignment covering theory questions an
 
 ## Project Structure
 
+``` text
 iobtech-backend-assignment/
 ├── THEORY.md
 ├── README.md
 └── mini-project/
     ├── package.json
     ├── tsconfig.json
-    ├── .gitignore            ← node_modules/, dist/, logs/
+    ├── .gitignore
     ├── scripts/
-    │   ├── generate.ts        ── Phase A
-    │   └── aggregate.ts       ── Phase A
+    │   ├── generate.ts
+    │   └── aggregate.ts
     ├── data/
-    │   └── (generated products.csv lives here — tell git to keep it or ignore it, your call)
     └── src/
-        ├── index.ts            
+        ├── index.ts
         ├── middleware/
         │   ├── requestLogger.ts
         │   ├── requireApiKey.ts
@@ -30,8 +30,8 @@ iobtech-backend-assignment/
         ├── services/
         │   └── product.service.ts
         └── utils/
-            └── logger.ts
-
+            └── logger.ts ```
+           
 
 
 ## Setup
