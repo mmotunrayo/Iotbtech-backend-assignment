@@ -4,27 +4,35 @@ A Node.js / Express / TypeScript backend assignment covering theory questions an
 
 ## Project Structure
 
-```
-iotbtech-backend-assignment/
-├── src/
-│   ├── phase-a/            # CSV generator & stream aggregator
-│   │   ├── generate.ts
-│   │   ├── aggregate.ts
-│   │   └── data/           # Generated CSV files (git-ignored)
-│   ├── phase-b/            # Express REST API (service/controller/routes)
-│   │   ├── routes/
-│   │   ├── controllers/
-│   │   └── services/
-│   ├── phase-c/            # Middleware
-│   │   └── middleware/
-│   ├── config/             # App configuration
-│   └── index.ts            # Entry point
-├── THEORY.md               # 21 theory questions
-├── package.json
-├── tsconfig.json
-├── .env.example
-└── .gitignore
-```
+iobtech-backend-assignment/
+├── THEORY.md
+├── README.md
+└── mini-project/
+    ├── package.json
+    ├── tsconfig.json
+    ├── .gitignore            ← node_modules/, dist/, logs/
+    ├── scripts/
+    │   ├── generate.ts        ── Phase A
+    │   └── aggregate.ts       ── Phase A
+    ├── data/
+    │   └── (generated products.csv lives here — tell git to keep it or ignore it, your call)
+    └── src/
+        ├── index.ts            
+        ├── middleware/
+        │   ├── requestLogger.ts
+        │   ├── requireApiKey.ts
+        │   ├── notFoundHandler.ts
+        │   └── errorHandler.ts
+        ├── routes/
+        │   └── product.routes.ts
+        ├── controllers/
+        │   └── product.controller.ts
+        ├── services/
+        │   └── product.service.ts
+        └── utils/
+            └── logger.ts
+
+
 
 ## Setup
 
